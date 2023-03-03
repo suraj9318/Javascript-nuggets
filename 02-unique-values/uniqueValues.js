@@ -26,16 +26,21 @@ const menu = [
   ];
 
 
-  const categories = menu.map((category)=>{
-    return category.category
-  })
-  let uniqueCategory =new Set(categories);
-  uniqueCategory = ['all',...uniqueCategory]
+//   const categories = menu.map((category)=>{
+//     return category.category
+//   })
+//   let uniqueCategory =new Set(categories);
+//   uniqueCategory = ['all',...uniqueCategory]
 
-  const btns = uniqueCategory.map((item)=>{
-    return `<button>${item}</button>`
-  })
+//   const btns = uniqueCategory.map((item)=>{
+//     return `<button>${item}</button>`
+//   })
+
+
+// OR
+
+const categories = ['all',...new Set(menu.map((item)=> `<button>${item.category}</button>`))]
 
   const result = document.querySelector('.result');
-    result.innerHTML = btns.join('')
+    result.innerHTML = categories.join('')
 
