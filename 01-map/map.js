@@ -16,20 +16,21 @@ const people = [
     }
 ]
 
-
+// Return ages
 const ages = people.map(function(person){
     return person.age
 })
 console.log(ages)
 
-
+// Return array of objects of new people
 const newPeople = people.map((item)=>{
     return {firstName : item.name.toUpperCase(),
         oldAge : item.age +20
     }
 })
 console.log(newPeople);
-let count = 0
+
+// return and show names of persons
 const names = people.map((person,key)=>{
     return `<h1>${key+1} ${person.name}</h1>`
 } )
