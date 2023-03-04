@@ -14,3 +14,6 @@
 1. using square bracket notation we can change object value dynamically
 2. we can create or modify object key value pair dynamically.
 
+# 4. filter and find
+1. return a new array, can manipulate the size of new array (unlike map), return based on condition
+2. find return the single instance , return first match , if no match -undefined
