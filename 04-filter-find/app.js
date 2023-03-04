@@ -39,3 +39,25 @@ const randomPerson = people.find((item)=> item.age < 35);
 console.log(randomPerson)
 
 
+// --------------------------  Filter and delete data ------------------- //  
+
+function getName (data){
+    debugger
+    const names = data.map((item)=>{
+        const {name,age} = item
+        return `<div><h1>${name}</h1><button onclick="deleteData(${age})">Delete</button></div>`
+    })
+
+    const result = document.querySelector("#result");
+    result.innerHTML = names.join('')
+    console.log(names);
+}
+
+let newPeople = []
+function deleteData(id){
+    debugger
+     newPeople = newPeople.length  > 0  ?  newPeople.filter((item)=> item.age !== id)  : people.filter((item)=> item.age !== id)
+    getName(newPeople)
+
+}
+getName (people);
