@@ -17,3 +17,11 @@
 # 4. filter and find
 1. return a new array, can manipulate the size of new array (unlike map), return based on condition
 2. find return the single instance , return first match , if no match -undefined
+
+# 5. Reduce Array Method
+1. Iterate callback funtion
+2. Reduce to a single value - number, array, object.
+3. 1st parameter (acc) => total of all calculation.
+4. 2nd parameter (cur) => current iteration/value.
+
+

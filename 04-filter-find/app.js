@@ -37,3 +37,5 @@ console.log(watermelon)
 
 const randomPerson = people.find((item)=> item.age < 35);
 console.log(randomPerson)
+
+
