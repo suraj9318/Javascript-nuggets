@@ -1,8 +1,19 @@
-const people = [
-    { name : "Bob", age : 20, position : "Developer"},
-    { name : "Anna",  age : 25, position : "Desinger"},
-    { name : "Sussy", age : 30, position : "The Boss"},
-    { name : "Peter", age : 35, position : "Intern",}
-]
+const staff = [
+    { name: 'bob', age: 20, position: 'developer', salary: 100 },
+    { name: 'peter', age: 25, position: 'designer', salary: 300 },
+    { name: 'susy', age: 30, position: 'the boss', salary: 400 },
+    { name: 'anna', age: 35, position: 'intern', salary: 10 },
+  ];
+
+const dailySalary = staff.reduce((total,person)=>{
+     total += person.salary
+     return total
+},0)
+
+ console.log(dailySalary)
+
+
+
+
 
 
