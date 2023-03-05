@@ -25,3 +25,5 @@
 4. 2nd parameter (cur) => current iteration/value.
 
 
+# 6. Array/Object Destructuring
+1. fastest/easier way to access/unpack variable from array/object.
